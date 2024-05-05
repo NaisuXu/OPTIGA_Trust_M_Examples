@@ -84,7 +84,8 @@ pal_gpio_t optiga_reset_0 =
     // Platform specific GPIO context for the pin used to toggle Reset.
     // You should have reset_pin define in your system,
     // alternativly you can put here raw GPIO number, but without the & sign
-    (void*)NULL
+	// TODO
+    (void*)"reset"
 };
 
 /**
