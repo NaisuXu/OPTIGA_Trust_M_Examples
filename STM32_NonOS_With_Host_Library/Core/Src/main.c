@@ -134,7 +134,7 @@ int main(void)
 	  }
 
 // XXX choice which example to run
-#define EXAMPLE_READ_COPROCESSOR_ID
+#define EXAMPLE_CRYPT_RANDOM
 
 #ifdef EXAMPLE_READ_COPROCESSOR_ID
 	  extern int8_t example_read_coprocessor_id(struct pt *pt);
@@ -146,10 +146,10 @@ int main(void)
 	  example_crypt_random(&pt1);
 #endif
 
-//#ifdef EXAMPLE_UTIL_UPDATE_COUNT
-//	  extern int8_t example_util_update_count(struct pt *pt);
-//	  example_util_update_count(&pt1);
-//#endif
+#ifdef EXAMPLE_UTIL_UPDATE_COUNT
+	  extern int8_t example_util_update_count(struct pt *pt);
+	  example_util_update_count(&pt1);
+#endif
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
